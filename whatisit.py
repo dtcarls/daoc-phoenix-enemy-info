@@ -63,7 +63,7 @@ def main() :
         window.attributes('-topmost', True)
         readf = open(in_path+log_name, 'r')
         ### Go to end of file
-        #readf.seek(0,2)
+        readf.seek(0,2)
         parse_enemies(db, readf, window, label, charinfo, False, '')
         window.mainloop()
         readf.close()
