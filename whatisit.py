@@ -68,7 +68,6 @@ def main() :
         window.mainloop()
         readf.close()
         db.dump()
-        print("here")
     except IOError:
         print("Failed to open "+ log_name)
 
